@@ -13,7 +13,6 @@ con = pymysql.connect(user='root', password='lksjlksj', database='fundamentalpla
 cu = con.cursor()
 nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 nowdate = time.strftime("%Y%m%d", time.localtime())
-
 '''
 engine = create_engine("mysql+pymysql://{}:{}@{}/{}".format('root', 'lksjlksj', 'localhost', 'fundamentalplatform'))
 con = engine.connect()

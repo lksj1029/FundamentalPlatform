@@ -62,4 +62,3 @@ try:
 except Exception as e:
     print(str(e))
     print(nowtime + ' - 更新个股资金流向{tbname}失败！'.format(tbname=thistbname))
-

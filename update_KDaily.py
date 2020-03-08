@@ -20,7 +20,6 @@ print(df)
 df.to_sql(name='tb_stockcompany', con=con, if_exists='append', index=False)
 '''
 
-
 try:
     cu.execute('select lastdate from tb_index where tbname = "{tbname}"'.format(tbname=thistbname))
     lastdate = cu.fetchall()[0][0]
