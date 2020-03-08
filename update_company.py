@@ -8,7 +8,6 @@ pro = ts.pro_api()
 con = pymysql.connect(user='root', password='lksjlksj', database='fundamentalplatform', charset='utf8')
 cu = con.cursor()
 nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-
 '''
 engine = create_engine("mysql+pymysql://{}:{}@{}/{}".format('root', 'lksjlksj', 'localhost', 'fundamentalplatform'))
 con = engine.connect()

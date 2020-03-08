@@ -20,6 +20,7 @@ df = pro.hk_hold(trade_date='20190625')
 print(df)
 df.to_sql(name=thistbname, con=con, if_exists='append', index=False)
 '''
+
 try:
     cu.execute('select lastdate from tb_index where tbname = "{tbname}"'.format(tbname=thistbname))
     lastdate = cu.fetchall()[0][0]
