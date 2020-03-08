@@ -31,4 +31,3 @@ try:
     print(nowtime + ' - 更新股票列表成功！')
 except:
     print(nowtime + ' - 更新股票列表失败！')
-    
